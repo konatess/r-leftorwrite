@@ -11,8 +11,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
+          href="https://frozen-ape.herokuapp.com/oauth2/authorize?client_id=32ace616-64b6-4317-9226-7037893f1bda&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Foauth-redirect"
           rel="noopener noreferrer"
         >
           Learn React

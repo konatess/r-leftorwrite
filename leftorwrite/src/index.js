@@ -27,9 +27,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      body: {
-        // user: { email: 'test' }
-      }, // this is the body from /user
+      body: {}, // this is the body from /user
       updated: 'no'
     };
   }

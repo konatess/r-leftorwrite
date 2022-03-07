@@ -15,8 +15,25 @@ const strings = {
         deleteStory: "Delete Story"
     },
     createUser: {
-        message: "Please create a unique username",
+        message: "Please create a unique username. Username must be between 3 and 50 characters long.",
         label: "Username: "
+    },
+    login: "Log In",
+    logout: "Log Out",
+    routes: {
+        server: 'http://localhost:3001',
+        user: '/user',
+        login: '/login',
+        auth: '/oauth-callback',
+        logout: '/logout',
+        story: '/story',
+        page: '/page',
+        create: '/create',
+        update: '/update',
+        delete: '/delete',
+        allPages: '/allpages', 
+        publish: '/publish',
+        tagsByCount: '/bycount'
     }
 }
 export default strings

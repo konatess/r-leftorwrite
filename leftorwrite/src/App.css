@@ -1,5 +1,36 @@
+/* colors from: https://coolors.co/f6efdf-b68f72-79975e-26130d-8041d0-df5378-fee375-8dcd75-00a5e0 */
+html {
+	--light-neutral: #F6EFDF;
+    --medium-neutral: #B68F72;
+    --dark-neutral: #26130D;
+	--main-accent: #003D73;
+    --second-accent: #79975E;
+    --start-icon: #8DCD75;
+    --end-icon: #8041D0;
+    --tbc-icon: #DF5378;
+	--child-link-icon: #FEE375;
+	--parent-link-icon: #FEE375;
+    --page-bg: #00A5E0;
+	background-color: var(--light-neutral);
+}
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: stretch;
+	align-items: stretch;
+  	text-align: center;
+  	background-color: var(--light-neutral);
+}
+
+.footer {
+	background-color: var(--dark-neutral);
+	color: var(--medium-neutral);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
 }
 
 .App-logo {
@@ -11,21 +42,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

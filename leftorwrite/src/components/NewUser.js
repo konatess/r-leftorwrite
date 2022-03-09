@@ -6,12 +6,13 @@ export default function NewUser(props) {
   
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        // alert(`Submitting Name ${name}`)
-        props.changeUsername()
+        props.changeUsername(props.uri, name, props.responseState, props.errorState)
     }
 
     return <div>
         <form onSubmit={handleSubmit}>
+            <p>{strings.createUser.message}</p>
+            {props.error && <p>{props.error}</p>}
             <label>
                 {strings.createUser.label}
                 <input

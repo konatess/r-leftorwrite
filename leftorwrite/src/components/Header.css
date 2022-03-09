@@ -8,7 +8,7 @@ header {
     padding-right: 1rem;
     align-items: center;
 }
-.feather {
+.headerfeather {
     color: var(--dark-neutral);
 }
 
@@ -22,13 +22,13 @@ button {
     border-color: var(--dark-neutral);
     color: var(--dark-neutral);
 }
-.btndiv {
+.headerbtn {
     width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-p {
+#loginmsg {
     margin-left: auto;
 }
 a:link, a:visited {

@@ -1,20 +1,20 @@
 import './Header.css'
 import React from 'react';
-import { FaFeatherAlt } from "react-icons/fa";
+import icons from '../constants/icons';
 
 export default function Header (props) {
     return <header>
-        <div className='btndiv'>
+        <div className='headerbtn'>
             <button>
-                <FaFeatherAlt className='feather'/>
+                {icons.feather({className: '', id: 'headerfeather'})}
             </button>
         </div>
         <div>
             <h1>{props.pagename}</h1>
         </div>
-        <div className='btndiv'>
-            <p>'You are not logged in.'</p>
-            <a href={props.uri + props.path}>{props.message}</a>
+        <div className='headerbtn'>
+            <span id="loginmsg">{props.message}</span>
+            <a id="loginbtn" href={props.uri + props.path}>{props.btn}</a>
         </div>
     </header>
 }

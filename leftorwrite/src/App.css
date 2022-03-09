@@ -12,6 +12,7 @@ html {
 	--parent-link-icon: #FEE375;
     --page-bg: #00A5E0;
 	background-color: var(--light-neutral);
+	min-height: 100vh;
 }
 .App {
 	display: flex;
@@ -21,6 +22,7 @@ html {
 	align-items: stretch;
   	text-align: center;
   	background-color: var(--light-neutral);
+	min-height: 100vh;
 }
 
 .footer {
@@ -33,9 +35,53 @@ html {
 	padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#introarrow {
+	transform: scaleX(-1);
+}
+
+
+
+#intropage {
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: stretch;
+	flex-grow: 3;
+	margin: 2rem;
+	justify-self: stretch;
+	align-self: stretch;
+}
+
+.introbtn {
+	display: flex;
+	align-self: stretch;
+	color: var(--main-accent);
+	border: solid .2rem;
+	border-radius: 2rem;
+	margin: 2rem;
+	padding: 2rem;
+	flex-grow: 3;
+}
+
+.introicon {
+	display: flex;
+	flex-grow: 3;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#container {
+	display: flex;
+	flex-grow: 3;
+}
+
+.tabbar {
+	min-width: 100%;
+}
+
+/* .App-logo {
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -51,4 +97,4 @@ html {
   to {
     transform: rotate(360deg);
   }
-}
+} */

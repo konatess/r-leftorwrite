@@ -1,15 +1,15 @@
-// import { IconName } from "react-icons/fa";
+import { FaFeatherAlt, FaShare } from "react-icons/fa";
 
 export default {
     start: 'FaCircle',
     tbc: 'FaBahai',
     end: 'FaSquare',
-    link: 'FaLink',
+    link: 'FaLink', // FaAngleUp FaAngleDown FaCaretDown FaCaretUp FaChevronUp FaChevronDown FaExclamationCircle FaBolt
     continue: 'FaForward', // FaPlay
     choice: 'FaClone', // FaProjectDiagram FaArrowsAlt FaArrowsAltH FaShapes FaShareAltSquare
     bookmark: 'FaBookmark',
     bookmarkline: 'FaRegBookmark',
-    feather: 'FaFeatherAlt',
+    feather: (props) => { return <FaFeatherAlt className={props.className} id={props.id}/> },
     heart: 'FaHeart',
     heartline: 'FaRegHeart',
     close: 'FaTimes',
@@ -17,9 +17,10 @@ export default {
     page: 'FaFile',
     pageline: 'FaRegFile',
     filter: 'FaFilter',
-    curvedarrow: 'FaShare', // FaShareSquare
+    curvedarrow: (props) => {return <FaShare className={props.className} id={props.id}/>}, // FaShareSquare
     ghost: 'FaGhost',
     cooperate: 'FaHandsHelping',
+    alert: 'FaBell'
 }
 
 // FaStar

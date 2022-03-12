@@ -12,7 +12,7 @@ header {
     color: var(--dark-neutral);
 }
 
-button {
+#homebtn {
     background-color: var(--main-accent);
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ button {
 #loginmsg {
     margin-left: auto;
 }
-a:link, a:visited {
+#loginbtn:link, #loginbtn:visited {
     border: .1rem solid;
     border-color: var(--light-neutral);
     color: var(--light-neutral);
@@ -41,6 +41,6 @@ a:link, a:visited {
     padding: .5rem;
     border-radius: .5rem;
 }
-a:hover, a:active {
+#loginbtn:hover, #loginbtn:active {
     background-color: var(--dark-neutral);
   }

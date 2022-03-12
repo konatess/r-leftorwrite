@@ -3,10 +3,14 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import strings from "./constants/strings";
 import dbFunctions from './constants/dbFunctions';
-import NewUser from './components/NewUser';
-import Container from './components/Container';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Intro from './pages/Intro';
+import NewUser from './pages/NewUser';
+import Read from './pages/Read';
+import Dashboard from './pages/Dashboard';
+import Write from './pages/Write';
 const server = 'http://localhost:3001';
 
 
@@ -44,6 +48,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<Router>
 			<Header 
 				pagename={strings.name} 
 				btn={user.id ? strings.logout : strings.login}
@@ -51,7 +56,23 @@ function App() {
 				path={user.id ? strings.routes.logout : strings.routes.login}
 				uri={server}
 			/>
-			<Container/>
+			<div id='container' >
+				<Routes>
+					<Route exact path='/' exact element={<Intro />} />
+					<Route path={strings.fRoutes.newUser} element={<NewUser 
+						uri={`${server}/user/${user.id}`}
+						user={user.displayName}
+						responseState={setUpdatedUser}
+						errorState={setError}
+						changeUsername={dbFunctions.changeUsername}
+						changeName={setUser}
+						error={updatedUser.errorMessage || ''}
+					/>} />
+					<Route path={strings.fRoutes.read} element={<Read />} />
+					<Route path={strings.fRoutes.dashboard} element={<Dashboard />} />
+					<Route path='/write' element={<Write />} />
+				</Routes>
+			</div>
 			{/* <p>Updated: {updated ? 'yes' : 'no'}</p> */}
 			{/* {error.errorMessage && <span>{error.errorMessage}</span>} */}
 			{updatedUser.updated && <span> {updatedUser.updated} </span>}
@@ -68,6 +89,7 @@ function App() {
 				error={updatedUser.errorMessage || ''}
 			/>}
 			<Footer/>
+			</Router>
 		</div>
 	);
 }

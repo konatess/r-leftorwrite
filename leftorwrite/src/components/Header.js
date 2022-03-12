@@ -5,7 +5,7 @@ import icons from '../constants/icons';
 export default function Header (props) {
     return <header>
         <div className='headerbtn'>
-            <button>
+            <button id='homebtn'>
                 {icons.feather({className: '', id: 'headerfeather'})}
             </button>
         </div>

@@ -11,8 +11,9 @@ html {
 	--child-link-icon: #FEE375;
 	--parent-link-icon: #FEE375;
     --page-bg: #00A5E0;
-	background-color: var(--light-neutral);
+	background-color: var(--medium-neutral);
 	min-height: 100vh;
+	color: var(--dark-neutral);
 }
 .App {
 	display: flex;
@@ -21,7 +22,6 @@ html {
 	align-content: stretch;
 	align-items: stretch;
   	text-align: center;
-  	background-color: var(--light-neutral);
 	min-height: 100vh;
 }
 
@@ -39,44 +39,67 @@ html {
 	transform: scaleX(-1);
 }
 
+#introblurb {
+	background-color: var(--light-neutral);
+	padding: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 0rem;
+}
 
+.mainpage {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	margin: 2rem;
+}
 
-#intropage {
+.innerpage {
 	display: flex;
 	flex-direction: row;
-	justify-content: stretch;
-	align-items: stretch;
-	flex-grow: 3;
-	margin: 2rem;
-	justify-self: stretch;
-	align-self: stretch;
+	background-color: var(--light-neutral);
 }
 
 .introbtn {
 	display: flex;
 	align-self: stretch;
-	color: var(--main-accent);
-	border: solid .2rem;
-	border-radius: 2rem;
-	margin: 2rem;
-	padding: 2rem;
-	flex-grow: 3;
+	border: solid .2rem var(--main-accent);
+	border-radius: 10%;
+	margin: 4%;
+	flex: 1 0 auto;
+}
+
+.introbtn:hover {
+	background-color: var(--main-accent);
+	color: var(--light-neutral);
 }
 
 .introicon {
 	display: flex;
 	flex-grow: 3;
-	min-width: 100%;
-	min-height: 100%;
+	height: auto;
+	color: var(--main-accent);
+	padding: 10%;
+}
+
+.introicon:hover {
+	color: var(--light-neutral);
+}
+
+.introbtn::after {
+	content: '';
+	display: block;
+    padding-bottom: 100%;
+}
+
+#introchoose {
+	align-self: center;
+	white-space: pre-line;
+	font-size: 5vw;
 }
 
 #container {
 	display: flex;
 	flex-grow: 3;
-}
-
-.tabbar {
-	min-width: 100%;
 }
 
 /* .App-logo {

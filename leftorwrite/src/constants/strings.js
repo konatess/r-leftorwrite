@@ -16,7 +16,7 @@ const strings = {
             {id: "recent", name: "Recently Edited"},
             {id: "published", name: "Published"},
             {id: "unpublished", name: "Unpublished"},
-            {id: "settings", name: "Author Settings"}
+            {id: "settings", name: "Profile Settings"}
         ],
         wrtieOne: [
             {id: "allpages", name: "All Pages in Use"}, 
@@ -49,6 +49,10 @@ const strings = {
     logout: "Log Out",
     loginMsg: "You are not logged in.",
     hello: "Hello, ",
+    introPage: {
+        choose: "Which\nwill\nyou\nchoose?",
+        blurb: "Left or Write is ....   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
     routes: {
         server: 'http://localhost:3001',
         user: '/user',
@@ -63,6 +67,14 @@ const strings = {
         allPages: '/allpages', 
         publish: '/publish',
         tagsByCount: '/bycount'
+    },
+    fRoutes: {
+        newUser: "/newuser",
+        dashboard: "/dashboard",
+        write: "/write",
+        writep: "/write/page",
+        read: "/read",
+        readp: "read/page"
     },
     errors: {
         noLogin: "Sorry, you need to be logged in to do that.",

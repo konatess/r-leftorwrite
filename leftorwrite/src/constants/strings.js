@@ -8,9 +8,11 @@ const strings = {
     },
     tabs: {
         read: [
-            {id: "recent", name: "Recent Stories"}, 
-            {id: "bytag", name: "By Tag"}, 
-            {id: "byauthor", name: "By Author"}
+            {id: "recent", name: "Recently Updated"}, 
+            {id: "bytitle", name: "All Stories by Title"},
+            {id: "bytag", name: "Search by Tag"}, 
+            {id: "byauthor", name: "Search by Author"},
+            {id: "favorites", name: "Favorite Stories"}
         ],
         writeAll: [
             {id: "recent", name: "Recently Edited"},
@@ -18,7 +20,7 @@ const strings = {
             {id: "unpublished", name: "Unpublished"},
             {id: "settings", name: "Profile Settings"}
         ],
-        wrtieOne: [
+        writeOne: [
             {id: "allpages", name: "All Pages in Use"}, 
             {id: "unlinked", name: "Unlinked Pages"}, 
             {id: "unfinished", name: "Unfinished Writing"}, 
@@ -26,6 +28,11 @@ const strings = {
             {id: "tbcs", name: "TBC Pages"},
             {id: "recentpages", name: "Recently Edited"}
         ]
+    },
+    searchBools: {
+        and: "AND",
+        or: "OR",
+        not: "NOT"
     },
     warnings: {
         chooseNotToWarn: "Choose Not To Warn", 
@@ -69,12 +76,13 @@ const strings = {
         tagsByCount: '/bycount'
     },
     fRoutes: {
+        home: "/",
         newUser: "/newuser",
         dashboard: "/dashboard",
         write: "/write",
         writep: "/write/page",
         read: "/read",
-        readp: "read/page"
+        readp: "read/page",
     },
     errors: {
         noLogin: "Sorry, you need to be logged in to do that.",

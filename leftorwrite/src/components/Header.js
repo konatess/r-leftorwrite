@@ -4,17 +4,17 @@ import icons from '../constants/icons';
 
 export default function Header (props) {
     return <header>
-        <div className='headerbtn'>
-            <button id='homebtn'>
+        <div className='headercol'>
+            <a className='headerbtn' id='homebtn' href={props.homeuri}>
                 {icons.feather({className: '', id: 'headerfeather'})}
-            </button>
+            </a>
         </div>
         <div>
             <h1>{props.pagename}</h1>
         </div>
-        <div className='headerbtn'>
+        <div className='headercol'>
             <span id="loginmsg">{props.message}</span>
-            <a id="loginbtn" href={props.uri + props.path}>{props.btn}</a>
+            <a className='headerbtn' id="loginbtn" href={props.uri + props.path}>{props.btn}</a>
         </div>
     </header>
 }

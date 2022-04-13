@@ -55,6 +55,7 @@ function App() {
 				message={user.displayName ? strings.hello.concat(user.displayName) : strings.loginMsg}
 				path={user.id ? strings.routes.logout : strings.routes.login}
 				uri={server}
+				homeuri={strings.fRoutes.home}
 			/>
 			<div id='container' >
 				<Routes>
@@ -70,7 +71,7 @@ function App() {
 					/>} />
 					<Route path={strings.fRoutes.read} element={<Read />} />
 					<Route path={strings.fRoutes.dashboard} element={<Dashboard />} />
-					<Route path='/write' element={<Write />} />
+					<Route path={strings.fRoutes.write} element={<Write />} />
 				</Routes>
 			</div>
 			{/* <p>Updated: {updated ? 'yes' : 'no'}</p> */}

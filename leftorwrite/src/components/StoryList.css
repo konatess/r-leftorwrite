@@ -1,0 +1,68 @@
+#storylist {
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-neutral);
+    flex-grow: 3;
+    margin-right: 2rem;
+}
+
+.storyitem {
+    display: flex;
+    flex-direction: row;
+    border: .1rem solid var(--main-accent);
+    margin-bottom: .3rem;
+    padding: .2rem;
+    border-radius: .5rem;
+}
+
+.storyleftcol {
+    flex-direction: column;
+    width: 30%;
+}
+
+.storytitle, .authorname, .storydesc, .tagsrow, .datetime {
+    display: flex;
+    padding: .2rem;
+    text-align: left;
+}
+
+.storytitle {
+    display: flex;
+    color: var(--main-accent);
+    font-size: large;
+}
+
+.authorname {
+    display: flex;
+    color: var(--main-accent);
+}
+
+.label {
+    margin-right: .3rem;
+}
+
+.tagsrow {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tags {
+    padding-right: .3rem;
+    margin-right: .3rem;
+    border-right: .1rem solid var(--dark-neutral);
+}
+
+.tags:hover {
+    color: var(--main-accent)
+}
+
+.tags:last-of-type {
+    border: none;
+}
+
+.storydesc {
+    padding-left: .5rem;
+    border-left: .1rem solid var(--medium-neutral);
+    width: 70%;
+    text-align: left;
+}

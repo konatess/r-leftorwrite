@@ -5,7 +5,7 @@ import strings from '../constants/strings';
 export default function Intro (props) {
     return <div className='mainpage'>
         <span id='introblurb'>{strings.introPage.blurb}</span>
-        <div className='innerpage'>
+        <div id='introinnerpage'>
             <a className='introbtn' href={strings.fRoutes.read} >
                 {icons.curvedarrow({className: "introicon", id: "introarrow"})}
             </a>

@@ -1,0 +1,22 @@
+.linksrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pagelink {
+    margin: .5rem;
+    margin-bottom: 0rem;
+    text-decoration: none;
+    color: var(--dark-neutral);
+    padding: .4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: .1rem solid var(--second-accent);
+    border-radius: 1rem;
+}
+.pagelink:hover {
+    color: var(--light-neutral);
+    background-color: var(--second-accent);
+    font-weight: 600;
+}

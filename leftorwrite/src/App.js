@@ -11,6 +11,7 @@ import NewUser from './pages/NewUser';
 import Read from './pages/Read';
 import Dashboard from './pages/Dashboard';
 import Write from './pages/Write';
+import ReadPage from './pages/ReadPage';
 const server = 'http://localhost:3001';
 
 
@@ -59,7 +60,7 @@ function App() {
 			/>
 			<div id='container' >
 				<Routes>
-					<Route exact path='/' exact element={<Intro />} />
+					<Route exact path='/' element={<Intro />} />
 					<Route path={strings.fRoutes.newUser} element={<NewUser 
 						uri={`${server}/user/${user.id}`}
 						user={user.displayName}
@@ -72,6 +73,7 @@ function App() {
 					<Route path={strings.fRoutes.read} element={<Read />} />
 					<Route path={strings.fRoutes.dashboard} element={<Dashboard />} />
 					<Route path={strings.fRoutes.write} element={<Write />} />
+					<Route path={strings.fRoutes.readp} element={<ReadPage />} />
 				</Routes>
 			</div>
 			{/* <p>Updated: {updated ? 'yes' : 'no'}</p> */}

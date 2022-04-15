@@ -82,7 +82,7 @@ const strings = {
         write: "/write",
         writep: "/write/page",
         read: "/read",
-        readp: "read/page",
+        readp: "read/page/:pageid",
     },
     errors: {
         noLogin: "Sorry, you need to be logged in to do that.",

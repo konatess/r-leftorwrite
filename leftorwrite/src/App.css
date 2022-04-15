@@ -55,6 +55,13 @@ html {
 
 .innerpage {
 	display: flex;
+	flex-direction: column;
+	background-color: var(--light-neutral);
+	padding: 2rem;
+}
+
+#introinnerpage {
+	display: flex;
 	flex-direction: row;
 	background-color: var(--light-neutral);
 }
@@ -101,6 +108,16 @@ html {
 	display: flex;
 	flex-grow: 3;
 }
+
+.pagecontent {
+	margin: 1rem;
+}
+
+.pageparagraphs {
+	text-align: left;
+	text-indent: 2rem;
+}
+
 
 /* .App-logo {
 	height: 40vmin;

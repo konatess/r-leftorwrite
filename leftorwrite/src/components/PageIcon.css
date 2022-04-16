@@ -1,0 +1,41 @@
+.pageIcon {
+    height: 80px;
+    width: 50px;
+    border: 2px solid var(--page-outline);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 2px;
+}
+
+.unfinPageIcon {
+    background-image: linear-gradient(#0000, var(--page-outline));
+}
+
+.parentStatus, .childStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+}
+
+.pageStatus {
+    height: 36px;
+    width: fit-content;
+}
+
+.pStartIcon {
+    color: var(--start-icon);
+}
+
+.pTBCIcon {
+    color: var(--tbc-icon);
+}
+
+.pEndIcon {
+    color: var(--end-icon);
+}
+
+.pLinkIcon {
+    color: var(--parent-link-icon);
+}

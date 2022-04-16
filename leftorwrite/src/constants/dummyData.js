@@ -1,13 +1,67 @@
-import { useState } from 'react';
-import icons from '../constants/icons';
-import strings from '../constants/strings';
-import TabBar from '../components/TabBar';
-import StoryList from '../components/StoryList';
-
-export default function Dashboard (props) {
-    const [activeTab, setActiveTab] = useState(strings.tabs.writeAll[0].id);
-
-    let stories = [
+export default {
+    pages: [
+        {
+            id: 16,
+            title: "First Start Page",
+            content: "I am make many story. Thus it shall be.",
+            isStart: true,
+            isTBC: false,
+            isEnding: false,
+            isLinked: true,
+            isOrphaned: false,
+            contentFinished: false,
+            createdAt: "2022-03-01 03:58:17",
+            updatedAt: "2022-03-03 03:58:17",
+            AuthorId: 3,
+            StoryId: 1
+        },
+        {
+            id: 18,
+            title: "Page 2",
+            content: "I am make many story. Thus it shall be.",
+            isStart: false,
+            isTBC: true,
+            isEnding: false,
+            isLinked: true,
+            isOrphaned: false,
+            contentFinished: true,
+            createdAt: "2022-03-01 03:58:17",
+            updatedAt: "2022-03-01 03:58:17",
+            AuthorId: 3,
+            StoryId: 1
+        },
+        {
+            id: 19,
+            title: "A page with a medium length title for visuals.",
+            content: "I am make many story. Thus it shall be.",
+            isStart: false,
+            isTBC: false,
+            isEnding: true,
+            isLinked: true,
+            isOrphaned: false,
+            contentFinished: false,
+            createdAt: "2022-03-01 03:58:17",
+            updatedAt: "2022-03-21 03:58:17",
+            AuthorId: 3,
+            StoryId: 1
+        },
+        {
+            id: 25,
+            title: "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musi",
+            content: "I am make many story. Thus it shall be.",
+            isStart: false,
+            isTBC: false,
+            isEnding: false,
+            isLinked: false,
+            isOrphaned: true,
+            contentFinished: false,
+            createdAt: "2022-03-01 03:58:17",
+            updatedAt: "2022-03-05 03:58:17",
+            AuthorId: 3,
+            StoryId: 1
+        }
+    ],
+    stories: [
         {
             id: 2,
             title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean m",
@@ -59,13 +113,5 @@ export default function Dashboard (props) {
             updatedAt: "2022-03-21 20:12:07",
             AuthorId: 3
         }
-    ]
-
-    return <div className='mainpage'>
-        <TabBar tabs={strings.tabs.writeAll} onChange={setActiveTab} />
-        <div className='innerpage'>
-            {/* <p>{activeTab}</p> */}
-            <StoryList stories={stories} redirect={props.redirect} />
-        </div>
-    </div>
+    ],
 }

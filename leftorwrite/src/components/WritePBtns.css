@@ -1,0 +1,30 @@
+#writebtnsrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.writepbtn {
+    min-height: 90px;
+    width: fit-content;
+    padding: 5px;
+    margin: 0px 40px;
+    /* background-color: aqua; */
+}
+
+#continuebtn {
+    color: var(--cont-icon);
+}
+
+#choicebtn {
+    color: var(--choice-icon);
+}
+
+#tbcbtn {
+    color: var(--tbc-icon);
+}
+
+#endingbtn {
+    color: var(--end-icon);
+}

@@ -5,12 +5,25 @@ html {
     --dark-neutral: #26130D;
 	--main-accent: #003D73;
     --second-accent: #79975E;
-    --start-icon: #8DCD75;
-    --end-icon: #8041D0;
-    --tbc-icon: #DF5378;
-	--child-link-icon: #FEE375;
-	--parent-link-icon: #FEE375;
-    --page-bg: #00A5E0;
+    /* --start-icon: #8DCD75; */
+	/* --start-icon: #A8DA95; */
+	--start-icon: #59A63A;
+	--cont-icon: #59A63A;
+	--choice-icon: #59A63A;
+    /* --end-icon: #8041D0; */
+	/* --end-icon: #A77CDE; */
+	--end-icon: #7131C4;
+    /* --tbc-icon: #DF5378; */
+	/* --tbc-icon: #E67593; */
+	--tbc-icon: #BE234C;
+	/* --child-link-icon: #FEE375;
+	--parent-link-icon: #FEE375; */
+	--child-link-icon: #F4C301;
+	--parent-link-icon: #F4C301;
+	/* --page-outline: #00A5E0;
+    --page-bg: #00A5E055; */
+	--page-outline: #0ABEFF;
+    --page-bg: #0ABEFF;
 	background-color: var(--medium-neutral);
 	min-height: 100vh;
 	color: var(--dark-neutral);
@@ -116,6 +129,11 @@ html {
 .pageparagraphs {
 	text-align: left;
 	text-indent: 2rem;
+}
+
+#pagedata {
+	display: flex;
+	flex-direction: column;
 }
 
 

@@ -10,7 +10,7 @@ export default function Read (props) {
         <TabBar tabs={strings.tabs.read} onChange={setActiveTab} />
         <div className='innerpage'>
             {/* <p>{activeTab}</p> */}
-            <StoryList/>
+            <StoryList stories={props.stories} redirect={props.redirect} />
         </div>
     </div>
 }

@@ -21,12 +21,13 @@ const strings = {
             {id: "settings", name: "Profile Settings"}
         ],
         writeOne: [
-            {id: "allpages", name: "All Pages in Use"}, 
-            {id: "unlinked", name: "Unlinked Pages"}, 
+            {id: "storysettings", name: "Story Settings"},
+            {id: "storymap", name: "Story Map"},
+            {id: "recentpages", name: "Recently Edited"}, 
             {id: "unfinished", name: "Unfinished Writing"}, 
-            {id: "orphans", name: "Orphan Pages"}, 
-            {id: "tbcs", name: "TBC Pages"},
-            {id: "recentpages", name: "Recently Edited"}
+            {id: "tbcs", name: "TBC Pages"}, 
+            {id: "unlinked", name: "Unlinked Pages"},
+            {id: "orphans", name: "Orphan Pages"}
         ]
     },
     searchBools: {
@@ -60,6 +61,16 @@ const strings = {
         choose: "Which\nwill\nyou\nchoose?",
         blurb: "Left or Write is ....   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
+    formlabels: {
+        story: {
+            title: "Story Title: "
+        },
+        page: {
+            title: "Page Title: ",
+            content: "Page Content: ",
+            finished: "Is this page finished? Check the box to mark the page content as finished. You can easily see all unfinished pages when you edit your story."
+        }
+    },
     routes: {
         server: 'http://localhost:3001',
         user: '/user',
@@ -79,10 +90,10 @@ const strings = {
         home: "/",
         newUser: "/newuser",
         dashboard: "/dashboard",
-        write: "/write",
-        writep: "/write/page",
+        writes: "/write/story/:storyid",
+        writep: "/write/page/:pageid",
         read: "/read",
-        readp: "read/page/:pageid",
+        readp: "/read/page/:pageid",
     },
     errors: {
         noLogin: "Sorry, you need to be logged in to do that.",

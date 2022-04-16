@@ -31,6 +31,7 @@
     display: flex;
     color: var(--main-accent);
     font-size: large;
+    text-decoration: none;
 }
 
 .authorname {
@@ -62,7 +63,7 @@
 }
 
 .storydesc {
-    padding-left: .5rem;
+    padding-left: 1rem;
     border-left: .1rem solid var(--medium-neutral);
     width: 70%;
     text-align: left;

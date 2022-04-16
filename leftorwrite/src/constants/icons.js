@@ -1,12 +1,12 @@
-import { FaFeatherAlt, FaShare } from "react-icons/fa";
+import { FaFeatherAlt, FaShare, FaCircle, FaBahai, FaLink, FaSquare, FaForward, FaClone, FaPlay } from "react-icons/fa";
 
 export default {
-    start: 'FaCircle',
-    tbc: 'FaBahai',
-    end: 'FaSquare',
-    link: 'FaLink', // FaAngleUp FaAngleDown FaCaretDown FaCaretUp FaChevronUp FaChevronDown FaExclamationCircle FaBolt
-    continue: 'FaForward', // FaPlay
-    choice: 'FaClone', // FaProjectDiagram FaArrowsAlt FaArrowsAltH FaShapes FaShareAltSquare
+    start: (props) => { return <FaCircle className={props.className} id={props.id}/> },
+    tbc: (props) => { return <FaBahai className={props.className} id={props.id}/> },
+    end: (props) => { return <FaSquare className={props.className} id={props.id}/> },
+    link: (props) => { return <FaLink className={props.className} id={props.id}/> }, // FaAngleUp FaAngleDown FaCaretDown FaCaretUp FaChevronUp FaChevronDown FaExclamationCircle FaBolt FaLink
+    continue: (props) => { return <FaPlay className={props.className} id={props.id}/> }, // FaPlay FaForward
+    choice: (props) => { return <FaForward className={props.className} id={props.id}/> }, // FaProjectDiagram FaArrowsAlt FaArrowsAltH FaShapes FaShareAltSquare FaForward
     bookmark: 'FaBookmark',
     bookmarkline: 'FaRegBookmark',
     feather: (props) => { return <FaFeatherAlt className={props.className} id={props.id}/> },

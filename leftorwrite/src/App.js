@@ -2,6 +2,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import strings from "./constants/strings";
+import dummyData from './constants/dummyData';
 import dbFunctions from './constants/dbFunctions';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
@@ -9,9 +10,10 @@ import Footer from './components/Footer';
 import Intro from './pages/Intro';
 import NewUser from './pages/NewUser';
 import Read from './pages/Read';
-import Dashboard from './pages/Dashboard';
-import Write from './pages/Write';
 import ReadPage from './pages/ReadPage';
+import Dashboard from './pages/Dashboard';
+import Write from './pages/Write.js';
+import WritePage from './pages/WritePage';
 const server = 'http://localhost:3001';
 
 
@@ -70,10 +72,11 @@ function App() {
 						changeName={setUser}
 						error={updatedUser.errorMessage || ''}
 					/>} />
-					<Route path={strings.fRoutes.read} element={<Read />} />
-					<Route path={strings.fRoutes.dashboard} element={<Dashboard />} />
-					<Route path={strings.fRoutes.write} element={<Write />} />
+					<Route path={strings.fRoutes.read} element={<Read stories={dummyData.stories} redirect={strings.fRoutes.readp} />} />
 					<Route path={strings.fRoutes.readp} element={<ReadPage />} />
+					<Route path={strings.fRoutes.dashboard} element={<Dashboard stories={dummyData.stories} redirect={strings.fRoutes.writes} />} />
+					<Route path={strings.fRoutes.writes} element={<Write pages={dummyData.pages} />} />
+					<Route path={strings.fRoutes.writep} element={<WritePage />} />
 				</Routes>
 			</div>
 			{/* <p>Updated: {updated ? 'yes' : 'no'}</p> */}

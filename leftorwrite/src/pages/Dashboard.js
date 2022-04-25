@@ -61,9 +61,9 @@ export default function Dashboard (props) {
         }
     ]
 
-    return <div className='mainpage'>
+    return <div className='mainpage col'>
         <TabBar tabs={strings.tabs.writeAll} onChange={setActiveTab} />
-        <div className='innerpage'>
+        <div className='innerpage col'>
             {/* <p>{activeTab}</p> */}
             <StoryList stories={stories} redirect={props.redirect} />
         </div>

@@ -1,0 +1,48 @@
+#pagedata {
+    display: flex;
+    /* background-color: blueviolet; */
+}
+
+label.text {
+    display: flex;
+    /* background-color: aqua; */
+    font-size: large;
+    margin-left: 1em;
+}
+
+input[type="checkbox"] + label {
+    justify-content: center;
+}
+
+input.wide-input, textarea {
+    display: flex;
+    margin: 1em;
+    padding: .3em;
+    font-size: large;
+    border: .1em solid var(--medium-neutral);
+    border-radius: .3em;
+}
+
+textarea {
+    min-height: 20em;
+    max-height: 32em;
+    font: 1em sans-serif;
+    resize: vertical;
+}
+
+input.checkbox {
+    width: fit-content;
+    margin-right: 1em;
+    accent-color: var(--main-accent);
+}
+
+/* input:focus {
+    border-color: aqua;
+} */
+
+textarea:focus, input.wide-input:focus {
+    outline: none;
+    border-color: var(--main-accent);
+    /* border-color: var(--second-accent); */
+    /* border: .15em solid var(--medium-neutral); */
+}

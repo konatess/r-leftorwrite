@@ -36,13 +36,29 @@ html {
 	align-items: stretch;
   	text-align: center;
 	min-height: 100vh;
+	font-size: large;
+	color: var(--dark-neutral);
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	/* background-color: #F4C301; */
+}
+
+.row-right {
+	justify-content: end;
+	/* background-color: #7131C4; */
 }
 
 .footer {
 	background-color: var(--dark-neutral);
 	color: var(--medium-neutral);
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
@@ -57,26 +73,19 @@ html {
 	padding: 3rem;
 	padding-top: 2rem;
 	padding-bottom: 0rem;
+	color: var(--dark-neutral)
 }
 
 .mainpage {
-	display: flex;
-	flex-direction: column;
 	width: 100vw;
 	margin: 2rem;
 }
 
 .innerpage {
-	display: flex;
-	flex-direction: column;
 	background-color: var(--light-neutral);
+	/* background-color: #F4C301; */
+	color: var(--dark-neutral);
 	padding: 2rem;
-}
-
-#introinnerpage {
-	display: flex;
-	flex-direction: row;
-	background-color: var(--light-neutral);
 }
 
 .introbtn {
@@ -136,6 +145,41 @@ html {
 	flex-direction: column;
 }
 
+#story-btns-col {
+	width: fit-content;
+	margin-right: 1em;
+	min-height: fit-content;
+	/* background-color: #0ABEFF; */
+}
+
+/* #storysettings {
+	background-color: greenyellow;
+} */
+
+#story-inputs-col {
+	/* background-color: #7131C4; */
+	flex-grow: 3;
+	justify-content: stretch;
+	align-items: stretch;
+}
+
+.story-btn {
+	color: var(--light-neutral);
+	background-color: var(--main-accent);
+	/* width: fit-content; */
+	padding: 1rem;
+	margin: .5rem;
+	border-radius: .3rem;
+}
+
+.read-title, .read-author {
+	color: var(--main-accent);
+	font-size: 2em;
+}
+
+.read-title {
+	font-weight: 700;
+}
 
 /* .App-logo {
 	height: 40vmin;

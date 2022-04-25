@@ -12,7 +12,8 @@ const strings = {
             {id: "bytitle", name: "All Stories by Title"},
             {id: "bytag", name: "Search by Tag"}, 
             {id: "byauthor", name: "Search by Author"},
-            {id: "favorites", name: "Favorite Stories"}
+            {id: "favorites", name: "Favorite Stories"},
+            {id: "bookmarks", name: "Bookmarked Pages"}
         ],
         writeAll: [
             {id: "recent", name: "Recently Edited"},
@@ -35,19 +36,30 @@ const strings = {
         or: "OR",
         not: "NOT"
     },
-    warnings: {
-        chooseNotToWarn: "Choose Not To Warn", 
-        violence: "Violence/Gore", 
-        characterDeath: "Character Death", 
-        nsfw: "Not Safe For Work", 
-        nonConsent: "NonConsent", 
-        profanity: "Profanity"
+    warnings: [
+        {id: "chooseNotToWarn", name: "Choose Not To Warn"}, 
+        {id: "profanity", name: "Profanity"}, 
+        {id: "nsfw", name: "Not Safe For Work"}, 
+        {id: "nonConsent", name: "NonConsent"}, 
+        {id: "violence", name: "Violence/Gore"}, 
+        {id: "characterDeath", name: "Character Death"}
+    ],
+    warnTitle: "Content Warnings:",
+    pageButtons: {
+        saveReturn: "Save and Return to Story",
+        delete: "Delete Page"
     },
     storyButtons: {
         saveChanges: "Save Changes", 
         viewStory: "View Story", 
         createNewPage: "Create New Page", 
-        deleteStory: "Delete Story"
+        deleteStory: "Delete Story",
+        publish: "Publish Story",
+        unpublish: "Unpublish Story"
+    },
+    readButtons: {
+        fav: "Add Story to Favorites",
+        bookmark: "Bookmark This Page"
     },
     createUser: {
         message: "Please create a unique username. Username must be between 3 and 50 characters long.",
@@ -63,7 +75,8 @@ const strings = {
     },
     formlabels: {
         story: {
-            title: "Story Title: "
+            title: "Story Title: ",
+            desc: "Story Description: "
         },
         page: {
             title: "Page Title: ",

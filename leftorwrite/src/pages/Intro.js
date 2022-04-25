@@ -3,9 +3,9 @@ import icons from '../constants/icons';
 import strings from '../constants/strings';
 
 export default function Intro (props) {
-    return <div className='mainpage'>
+    return <div className='mainpage col'>
         <span id='introblurb'>{strings.introPage.blurb}</span>
-        <div id='introinnerpage'>
+        <div className='innerpage row'>
             <a className='introbtn' href={strings.fRoutes.read} >
                 {icons.curvedarrow({className: "introicon", id: "introarrow"})}
             </a>

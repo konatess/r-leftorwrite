@@ -6,9 +6,9 @@ import StoryList from '../components/StoryList';
 export default function Read (props) {
     const [activeTab, setActiveTab] = useState(strings.tabs.read[0].id);
 
-    return <div className='mainpage'>
+    return <div className='mainpage col'>
         <TabBar tabs={strings.tabs.read} onChange={setActiveTab} />
-        <div className='innerpage'>
+        <div className='innerpage col'>
             {/* <p>{activeTab}</p> */}
             <StoryList stories={props.stories} redirect={props.redirect} />
         </div>

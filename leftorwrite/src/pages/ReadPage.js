@@ -21,7 +21,13 @@ export default function ReadPage (props) {
         createdAt: "2022-03-01 03:58:17",
         updatedAt: "2022-03-01 03:58:17",
         AuthorId: 1,
-        StoryId: 1
+        StoryId: 1,
+        Author: {
+            displayName: "Quetzel"
+        },
+        Story: {
+            title: "Title of the Song"
+        }
     }
     let linklist = [
         {
@@ -47,10 +53,18 @@ export default function ReadPage (props) {
     ]
 
     let paragraphs = page.content.split('\n')
-    return <div className="mainpage">
-        <div className="innerpage">
+    return <div className="mainpage col">
+        <div className="innerpage col">
             {/* <span>ReadPage</span>
             <span>{pageid}</span> */}
+            <div className="row row-right">
+                <span className='story-btn'>{strings.readButtons.fav}</span>
+                <span className='story-btn'>{strings.readButtons.bookmark}</span>
+            </div>
+            <div className="col" >
+                <span className="read-title">{page.Story.title}</span>
+                <span className="read-author">{"by " + page.Author.displayName}</span>
+            </div>
             <div className="pagecontent">
                 {paragraphs.map( (para) => {
                     return <p className="pageparagraphs">{para}</p>

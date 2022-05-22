@@ -8,9 +8,11 @@ export default function StoryBtns (props) {
         <span className='list-heading'>{strings.warnTitle}</span>
         {strings.warnings.map( (warn, index) => {
             return <div className='warn-btn row' >
-                <input type="checkbox" id={warn.id} name='warnings' className='btn' onChange={() => {return props.onChange(warn.id)}}/>
-                <span className='checkcircle'></span>
-                <label for={warn.id} className='btn' >{warn.name}</label>
+                <label for={warn.id} className='btn' > 
+                    <input type="checkbox" id={warn.id} name='warnings' className='btn' onChange={() => {return props.onChange(warn.id)}}/>
+                    <span className='checkcircle' />
+                    {warn.name}
+                </label>
             </div>
         })}
     </div>

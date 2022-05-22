@@ -42,7 +42,7 @@ const strings = {
         {id: "nsfw", name: "Not Safe For Work"}, 
         {id: "nonConsent", name: "NonConsent"}, 
         {id: "violence", name: "Violence/Gore"}, 
-        {id: "characterDeath", name: "Character Death"}
+        {id: "characterDeath", name: "Character Death *"}
     ],
     warnTitle: "Content Warnings:",
     pageButtons: {

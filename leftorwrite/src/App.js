@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import strings from "./constants/strings";
 import dummyData from './constants/dummyData';
 import dbFunctions from './constants/dbFunctions';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Intro from './pages/Intro';
@@ -23,6 +23,8 @@ function App() {
 	const [updated, setUpdated] = useState(false);
 	const [error, setError] = useState({});
 	const [updatedUser, setUpdatedUser] = useState({});
+
+	// let navigate = useNavigate();
 
 	useEffect(() => {
 		if (!updated || (user.id && new Date() > new Date(user.exp * 1000)) ) {
@@ -47,6 +49,9 @@ function App() {
 			setUser(userObj);
 			setUpdatedUser({});
 		}
+		// if (user.displayName === strings.defaultUsername) {
+		// 	navigate(strings.fRoutes.newUser);
+		// }
 	});
 
 	return (

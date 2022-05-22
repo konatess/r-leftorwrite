@@ -37,6 +37,7 @@ input.btn {
     width: 10px;
     border: 2px solid var(--main-accent);
     border-radius: 10px;
+    margin-right: .7rem;
 }
 
 input[type="checkbox"]:checked + .checkcircle {
@@ -45,10 +46,11 @@ input[type="checkbox"]:checked + .checkcircle {
 
 label.btn {
     display: flex;
-    margin-left: .5rem;
+    align-items: center;
+    margin-left: .2rem;
     /* background-color: blueviolet; */
 }
 
-.warn-btn input[type="checkbox"]:checked + label {
+/* .warn-btn input[type="checkbox"]:checked + label {
     background-color: blue;
-}
+} */

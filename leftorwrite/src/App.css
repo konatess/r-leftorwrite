@@ -7,19 +7,29 @@ html {
     --second-accent: #79975E;
     /* --start-icon: #8DCD75; */
 	/* --start-icon: #A8DA95; */
-	--start-icon: #59A63A;
-	--cont-icon: #59A63A;
-	--choice-icon: #59A63A;
+	/* --start-icon: #59A63A; */
+	--start-icon: #B4FF6F;
+	/* --cont-icon: #A8DA95; */
+	/* --cont-icon: #59A63A; */
+	--cont-icon: #B4FF6F;
+	/* --choice-icon: #A8DA95; */
+	/* --choice-icon: #8DFFFB; */
+	/* --choice-icon: #59A63A; */
+	--choice-icon: #8DFFFB;
     /* --end-icon: #8041D0; */
 	/* --end-icon: #A77CDE; */
-	--end-icon: #7131C4;
+	/* --end-icon: #7131C4; */
     /* --tbc-icon: #DF5378; */
+	--end-icon: #A35CFF;
 	/* --tbc-icon: #E67593; */
-	--tbc-icon: #BE234C;
+	/* --tbc-icon: #BE234C; */
+	--tbc-icon: #FF4797;
 	/* --child-link-icon: #FEE375;
 	--parent-link-icon: #FEE375; */
-	--child-link-icon: #F4C301;
-	--parent-link-icon: #F4C301;
+	/* --child-link-icon: #F4C301;
+	--parent-link-icon: #F4C301; */
+	--child-link-icon: #FFF585;
+	--parent-link-icon: #FFF585;
 	/* --page-outline: #00A5E0;
     --page-bg: #00A5E055; */
 	--page-outline: #0ABEFF;

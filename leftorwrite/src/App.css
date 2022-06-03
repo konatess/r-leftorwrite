@@ -28,8 +28,10 @@ html {
 	--parent-link-icon: #FEE375; */
 	/* --child-link-icon: #F4C301;
 	--parent-link-icon: #F4C301; */
-	--child-link-icon: #FFF585;
-	--parent-link-icon: #FFF585;
+	/* --child-link-icon: #FFF585;
+	--parent-link-icon: #FFF585; */
+	--child-link-icon: #FFD085;
+	--parent-link-icon: #FFD085;
 	/* --page-outline: #00A5E0;
     --page-bg: #00A5E055; */
 	--page-outline: #0ABEFF;

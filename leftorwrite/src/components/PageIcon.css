@@ -1,10 +1,25 @@
+html{
+    --page-icon-height: 160px;
+    --page-icon-width: 100px;
+    --status-space-height: 80px;
+}
+
 .pageIcon {
-    height: 160px;
-    width: 100px;
+    height: var(--page-icon-height);
+    width: var(--page-icon-width);
     border: 2px solid var(--page-outline);
     border-radius: 5px;
     margin: 3px;
     padding: 2px;
+    background-color: white;
+}
+
+.icon-title {
+    display: flex;
+    height: var(--page-icon-height);
+    width: var(--page-icon-height);
+    margin: 3px;
+    padding: 8px;
 }
 
 .unfinPageIcon {
@@ -15,16 +30,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    width: 100px;
+    height: var(--status-space-height);
+    width: var(--page-icon-width);
+    /* background-color: blue; */
 }
 
 .pageStatus {
-    height: 72px;
+    height: 90%;
     width: fit-content;
-    /* background-color: var(--dark-neutral); */
-    /* background-color: #000; */
-    /* border-radius: 10%; */
     filter: drop-shadow(0px 0px 1px var(--dark-neutral));
 }
 

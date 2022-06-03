@@ -43,12 +43,12 @@ export default function Write (props) {
     return <div className='mainpage col'>
         <TabBar tabs={strings.tabs.writeOne} onChange={setActiveTab} />
         <div className='innerpage col'>
-            <div className='row row-right'>
+            { activeTab !== "storymap" && <div className='row row-right'>
                 <span className='story-btn'>{strings.storyButtons.createNewPage}</span>
                 <span className='story-btn'>{strings.storyButtons.viewStory}</span>
                 <span className='story-btn'>{published ? strings.storyButtons.unpublish : strings.storyButtons.publish}</span>
                 <span className='story-btn'>{strings.storyButtons.deleteStory}</span>
-            </div>
+            </div> }
             { activeTab === "storysettings" && <div className='row' id='storysettings'> 
                 <div className='col' id='story-btns-col'>
                     <StoryBtns warns={activeWarns} onChange={setActiveWarns} />

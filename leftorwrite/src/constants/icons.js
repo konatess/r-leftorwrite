@@ -1,7 +1,7 @@
 import { FaCircle, FaBahai, FaSquare, FaLink, FaPlay, FaForward, FaBookmark,  
     FaRegBookmark, FaFeatherAlt, FaHeart, FaRegHeart, FaTimes, FaQuestion, FaFile,
-    FaRegFile, FaFilter, FaShare, FaGhost, FaHandsHelping, FaBell,
-    FaAngleUp, FaAngleDown,
+    FaRegFile, FaFilter, FaShare, FaGhost, FaHandsHelping, FaBell, FaUnlink,
+    FaAngleUp, FaAngleDown, FaExclamationCircle, FaBolt,
     // FaClone, FaShareAltSquare, FaProjectDiagram, FaShapes, FaArrowsAlt, FaArrowsAltH 
 } from "react-icons/fa";
 
@@ -9,9 +9,9 @@ export default {
     start: (props) => { return <FaCircle className={props.className} id={props.id}/> },
     tbc: (props) => { return <FaBahai className={props.className} id={props.id}/> },
     end: (props) => { return <FaSquare className={props.className} id={props.id}/> },
-    link: (props) => { return <FaLink className={props.className} id={props.id}/> }, // FaAngleUp FaAngleDown FaCaretDown FaCaretUp FaChevronUp FaChevronDown FaExclamationCircle FaBolt FaLink
-    parentlink: (props) => { return <FaAngleDown className={props.className} id={props.id}/> },
-    childlink: (props) => { return <FaAngleUp className={props.className} id={props.id}/> },
+    link: (props) => { return <FaLink className={props.className} id={props.id}/> }, // FaAngleUp FaAngleDown FaCaretDown FaCaretUp FaChevronUp FaChevronDown FaExclamationCircle FaBolt FaLink FaUnlink
+    parentlink: (props) => { return <FaBolt className={props.className} id={props.id}/> },
+    childlink: (props) => { return <FaBolt className={props.className} id={props.id}/> },
     continue: (props) => { return <FaPlay className={props.className} id={props.id}/> }, // FaPlay FaForward
     choice: (props) => { return <FaForward className={props.className} id={props.id}/> }, // FaProjectDiagram FaArrowsAlt FaArrowsAltH FaShapes FaShareAltSquare FaForward
     bookmark: (props) => { return <FaBookmark className={props.className} id={props.id}/> },
